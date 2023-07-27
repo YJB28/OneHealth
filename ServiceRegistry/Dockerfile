@@ -5,7 +5,7 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 WORKDIR /app
 
 # Copy the Spring Boot application JAR into the container
-COPY target/your-spring-boot-app.jar app.jar
+COPY target/ServiceRegistry-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port your Spring Boot application is running on (change the port accordingly)
 EXPOSE 8761
