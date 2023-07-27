@@ -1,5 +1,6 @@
 # Use a lightweight base image for Java
-FROM adoptopenjdk/openjdk11:alpine-jre
+# Dockerfile
+FROM openjdk:17-jdk-slim
 
 # Set the working directory inside the container
 WORKDIR /app
