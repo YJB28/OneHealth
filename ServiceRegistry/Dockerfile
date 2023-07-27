@@ -3,8 +3,8 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Set the working directory inside the container
 WORKDIR /app
-pwd
-ls
+RUN pwd
+RUN ls
 # Copy the Spring Boot application JAR into the container
 COPY ServiceRegistry/target/ServiceRegistry-0.0.1-SNAPSHOT.jar app.jar
 
