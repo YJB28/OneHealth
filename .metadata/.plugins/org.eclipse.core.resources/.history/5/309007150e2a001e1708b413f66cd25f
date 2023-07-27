@@ -1,0 +1,5 @@
+package com.oneHealth.APIGateway.Config;
+
+public class RouteConfig {
+
+}

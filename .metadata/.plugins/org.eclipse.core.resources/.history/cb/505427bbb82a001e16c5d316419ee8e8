@@ -1,0 +1,5 @@
+package com.oneHealth.PatientCheckout.Entity;
+
+public class Patient {
+
+}

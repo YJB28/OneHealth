@@ -1,0 +1,50 @@
+# application.properties
+
+# Server port
+server.port=8081
+
+# Application name
+spring.application.name=OneHealth-User
+
+# Eureka client configurations
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+
+# Database connection settings
+#
+#spring.datasource.url=jdbc:postgresql://localhost:5432/onehealth_user_db
+#spring.datasource.username=postgres
+#spring.datasource.password=yjb
+
+# 
+## Hibernate specific settings
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.show-sql=true
+#
+
+
+
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/onehealth_user_db?sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false
+
+spring.datasource.username=postgres
+
+spring.datasource.password=yjb
+
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto=update
+
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQLInnoDBDialect
+
+ 
+
+spring.jpa.show-sql=true
+
+spring.jpa.properties.hibernate.format_sql=true
+
+ 
+
+ 
+
+ 

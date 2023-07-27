@@ -1,0 +1,57 @@
+package com.oneHealth.PatientCheckout.Service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.oneHealth.PatientCheckout.Entity.Patient;
+import com.oneHealth.PatientCheckout.Repository.PatientRepository;
+
+@Service
+public class PatientServiceImpl implements PatientService {
+	private final PatientRepository patientRepository;
+
+	@Autowired
+	public PatientServiceImpl(PatientRepository patientRepository) {
+		this.patientRepository = patientRepository;
+	}
+
+	@Override
+	public List<Patient> getAllPatients() {
+		return patientRepository.findAll();
+	}
+
+	@Override
+	public Patient getPatientById(Integer patientId) {
+		return patientRepository.findById(patientId).orElse(null);
+	}
+
+	@Override
+	public Patient createPatient(Patient patient) {
+		return patientRepository.save(patient);
+	}
+
+	@Override
+	public Patient updatePatient(Integer patientId, Patient updatedPatient) {
+		Patient existingPatient = patientRepository.findById(patientId).orElse(null);
+		if (existingPatient != null) {
+			// Update the attributes of the existing patient with the attributes of the
+			// updatedPatient
+			// (Make sure to handle null values, if necessary)
+			// For example:
+			//existingPatient.setMobileNumber(updatedPatient.getMobileNumber());
+			//existingPatient.setAddress(updatedPatient.getAddress());
+			// Update other attributes as needed
+			// ...
+
+			return patientRepository.save(existingPatient);
+		}
+		return null;
+	}
+
+	@Override
+	public void deletePatient(Integer patientId) {
+		patientRepository.deleteById(patientId);
+	}
+}

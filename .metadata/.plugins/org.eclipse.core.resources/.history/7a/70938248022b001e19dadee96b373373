@@ -1,0 +1,19 @@
+## bootstrap.properties for API Gateway
+#spring.config.import=configserver:
+#
+#
+## Server port
+##server.port=8080
+##spring.application.name=API-Gateway55
+#
+#
+#eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+#
+##ConfigServer URI
+#spring.cloud.config.uri=http://localhost:8888
+#=====new
+
+
+#bootstrap.properties for API Gateway
+spring.config.import=configserver:
+

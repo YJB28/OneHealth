@@ -1,0 +1,20 @@
+# application.properties
+
+# Server port
+server.port=8081
+
+# Application name
+spring.application.name=OneHealth-User
+
+# Eureka client configurations
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+
+# Database configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/onehealth_user_db
+spring.datasource.username=root
+spring.datasource.password=yjb
+
+# Hibernate properties for database setup (you can customize these based on your needs)
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+

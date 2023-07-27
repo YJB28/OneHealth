@@ -1,0 +1,13 @@
+# application.properties
+
+# Server port
+server.port=8080
+
+#present in bootstrap file it load before this
+#spring.application.name=API-Gateway
+#
+## Eureka client configurations
+#eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+
+
+

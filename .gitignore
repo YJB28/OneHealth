@@ -1,0 +1,5 @@
+# Ignore the OneHealth-MicroServices-Config folder
+/OneHealth-MicroServices-Config/
+
+# Ignore the YJB.txt file
+YJB.txt

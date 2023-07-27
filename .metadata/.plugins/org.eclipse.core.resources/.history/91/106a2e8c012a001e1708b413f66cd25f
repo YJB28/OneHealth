@@ -1,0 +1,8 @@
+# application.properties
+
+# Server port
+server.port=8888
+
+# Git repository location where configuration files are stored
+spring.cloud.config.server.git.uri=https://github.com/YJB28/OneHealth-MicroServices-Config.git
+

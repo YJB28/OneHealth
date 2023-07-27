@@ -1,0 +1,4 @@
+# bootstrap.properties for API Gateway
+server.port=8080
+spring.application.name=API-GATEWAY
+spring.cloud.config.uri=http://localhost:8888

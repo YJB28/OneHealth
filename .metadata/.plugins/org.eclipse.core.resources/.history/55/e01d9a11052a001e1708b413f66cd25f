@@ -1,0 +1,12 @@
+# application.properties
+
+# Server port
+server.port=8888
+
+# Server Name
+spring.application.name=CONFIG-SERVER
+
+# Git repository location where configuration files are stored
+spring.cloud.config.server.git.uri=https://github.com/YJB28/OneHealth-MicroServices-Config.git
+spring.cloud.config.server.git.clone-on-start=true
+

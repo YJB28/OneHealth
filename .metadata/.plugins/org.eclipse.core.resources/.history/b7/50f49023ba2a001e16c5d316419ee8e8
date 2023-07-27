@@ -1,0 +1,5 @@
+package com.oneHealth.PatientCheckout.Service;
+
+public class PatientServiceImpl {
+
+}

@@ -1,0 +1,72 @@
+package com.oneHealth.PatientCheckout.Entity;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+public class Patient {
+	
+	public Patient() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer patientId;
+
+   
+    @Column(name = "user_id")
+    private Integer userId;
+
+  
+	@Column(length = 10)
+    private String mobileNumber;
+	
+	
+
+	@Column(length = 100)
+    private String address;
+
+    @Column(length = 6)
+    private String pinCode;
+
+    @Column(length = 50)
+    private String country;
+
+    @Column(length = 30)
+    private String city;
+
+    @Column(length = 10)
+    private String gender;
+
+    private Integer age;
+
+    @Temporal(TemporalType.DATE)
+    private Date dob;
+
+    @Column(length = 10)
+    private String bloodGroup;
+
+    private BigDecimal height;
+
+    private BigDecimal weight;
+
+    @Column(length = 20)
+    private String maritalStatus;
+
+    @Column(length = 100)
+    private String email;
+
+    // Constructors, getters, setters, etc.
+}
+

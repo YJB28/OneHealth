@@ -1,0 +1,5 @@
+package com.oneHealth.User.Repository;
+
+public interface UserRepository {
+
+}
